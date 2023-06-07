@@ -7,40 +7,41 @@
   <meta name="description" content="" />
   <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
 </head>
-<body class="container">
-  <h1 class="text-center p-3">Restaurant Waiting List</h1>
+<body class="container bg-dark">
+  <h1 class="text-center m-5 text-white">Restaurant Waiting List</h1>
 
-  <div class="card">
+  <div class="card bg-secondary">
     <div class="card-body">
         <div class="row">
             <div class="col-sm">
                 <div class="form-group">
-                    <label for="customer-name">Customer Name</label>
+                    <label for="customer-name" class="mb-1">Customer Name</label>
                     <input type="text" class="form-control" id="customer-name">
                 </div>
             </div>
             <div class="col-sm">
                 <div class="form-group">
-                    <label for="phone-number">Phone Number</label>
-                    <input type="text" class="form-control" id="phone-number">
+                    <label for="phone-number" class="'mb-1">Phone Number</label>
+                    <input type="input" class="form-control" id="phone-number" placeholder="123-456-789">
                 </div>
             </div>
         </div>
         <div class="row">
             <div class="col-sm">
                 <div class="form-group">
-                    <label for="party-size">Party Size</label>
+                    <label for="party-size" class="mt-2 mb-1">Party Size</label>
                     <input type="text" class="form-control" id="party-size" placeholder="ex: 6">
                 </div>
             </div>
         </div> 
         <div>
-            <button id="add" class="btn btn-primary from-control">Submit</button>
+            <button id="add" class="btn btn-primary from-control mt-3">Submit</button>
         </div>
     </div>
   </div>
 
-  <table id="list" class="table table-dark table-striped">
+  <table id="list" class="table table-secondary table-striped mt-3">
+    
     <tr>
         <th>Name</th>
         <th>Party Size</th>
